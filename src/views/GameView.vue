@@ -19,6 +19,7 @@ import TextLog from '../components/TextLog.vue'
 import PartyCards from '../components/PartyCards.vue'
 let test ="test"
 console.log(test)
+console.log(process.env.TEST)
 
 export default {
   name: 'App',
