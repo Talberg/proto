@@ -9,7 +9,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/GameView/:id',
+    path: '/GameView/',
     name: 'GameView',
     component: GameView
   },

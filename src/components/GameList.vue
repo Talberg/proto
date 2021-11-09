@@ -1,7 +1,8 @@
 <template>
+<div class="container" >
 <div class='col'  >
-  
-  </div>
+  This is where all the games will be listed 
+  </div></div>
 </template>
 
 <script>
@@ -18,7 +19,7 @@ export default {
 html, body {
   height: 100%;
 }
-.col{
+.gameListContainer{
     
     
     width: 100%;
