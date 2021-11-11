@@ -18,13 +18,12 @@
 import CharacterSheet from '../components/CharacterSheet.vue'
 import TextLog from '../components/TextLog.vue'
 import PartyCards from '../components/PartyCards.vue'
-let apiTOKEN = process.env.VUE_APP_ALCEMER_TOKEN
-let apiKEY = process.env.VUE_APP_ALCHEMER_KEY
+// let apiTOKEN = process.env.VUE_APP_ALCEMER_TOKEN
+// let apiKEY = process.env.VUE_APP_ALCHEMER_KEY
 let url= document.URL
 let urlSplit= url.split('/')
 let id = urlSplit[(urlSplit.length-1)]
-console.log(apiKEY)
-console.log(apiTOKEN)
+
 console.log(id)
 console.log(url)
 console.log(urlSplit)
