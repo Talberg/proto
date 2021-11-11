@@ -1,8 +1,9 @@
 <template>
 <div class="container" ></div>
   <div class='row'  >
-    <h1>{{ $route.params.id }}</h1>
- <CharacterSheet msg="test" /> 
+    <div id="charTitle" >title</div>
+    <h1 >{{ $route.params.id }}{{help}}</h1>
+ <CharacterSheet obj={{}} msg='{{ $route.params.id }}' /> 
  <TextLog msg="Welcome to Your Vue.js App"/>
  <PartyCards msg=""/>
   </div>
@@ -17,9 +18,23 @@
 import CharacterSheet from '../components/CharacterSheet.vue'
 import TextLog from '../components/TextLog.vue'
 import PartyCards from '../components/PartyCards.vue'
-let test ="test"
-console.log(test)
-console.log(process.env)
+let apiTOKEN = process.env.VUE_APP_ALCEMER_TOKEN
+let apiKEY = process.env.VUE_APP_ALCHEMER_KEY
+let url= document.URL
+let urlSplit= url.split('/')
+let id = urlSplit[(urlSplit.length-1)]
+console.log(apiKEY)
+console.log(apiTOKEN)
+console.log(id)
+console.log(url)
+console.log(urlSplit)
+let characterSheet = `<CharacterSheet msg='${id}' /> `
+let title= document.getElementById('#charTitle')
+console.log(characterSheet)
+setInterval(console.log(title),10)
+
+
+
 
 export default {
   name: 'App',
